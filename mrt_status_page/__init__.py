@@ -8,7 +8,6 @@ from .classes.datastores.sqlitedatastore import SqliteDataStore
 from .classes.datastores.redisdatastore import RedisDataStore
 
 from .classes.services.mcserver import MCServer
-from .classes.services.mumbleserver import MumbleServer
 from .classes.services.webservice import WebService
 from .classes.services.thirdpartyservice import ThirdPartyService
 
@@ -79,7 +78,6 @@ def index():
   return render_template('index.html', \
     Status = Status, \
     MCServer = MCServer, \
-    MumbleServer = MumbleServer, \
     WebService = WebService, \
     ThirdPartyService = ThirdPartyService, \
     title = app.config["PAGE_TITLE"], \
