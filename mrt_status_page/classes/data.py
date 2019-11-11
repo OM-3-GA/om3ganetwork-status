@@ -1,5 +1,4 @@
 from .services.mcserver import MCServer
-from .services.mumbleserver import MumbleServer
 from .services.webservice import WebService
 from .services.thirdpartyservice import ThirdPartyService
 
