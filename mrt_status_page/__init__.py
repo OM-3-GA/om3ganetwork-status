@@ -61,7 +61,6 @@ app = Flask(__name__, instance_relative_config = True)
 app.config.from_object('mrt_status_page.default_config')
 app.config.from_pyfile("config.py")
 with app.app_context():
-  MumbleServer.init_slice()
   init_data_store(app)
   refresh_data()
   init_schedule()
