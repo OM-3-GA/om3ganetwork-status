@@ -34,7 +34,6 @@ class Data():
 
     self.service_groups = {}    
     self.service_groups[MCServer] = Data.ServiceGroup(MCServer, os.path.join(services_path, 'mc_servers.json'))
-    self.service_groups[MumbleServer] = Data.ServiceGroup(MumbleServer, os.path.join(services_path, 'mumble_servers.json'))
     self.service_groups[WebService] = Data.ServiceGroup(WebService, os.path.join(services_path, 'web_services.json'))
     self.service_groups[ThirdPartyService] = Data.ServiceGroup(ThirdPartyService, os.path.join(services_path, 'third_party_services.json'))
 
